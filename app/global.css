@@ -148,3 +148,16 @@ table {
 .title {
   text-wrap: balance;
 }
+@font-face {
+  font-family: 'Minecraft';
+  src: url('./public/MINECRAFT_FONT.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Inter', Impact;
+}
+h2 {
+  font-family: 'Minecraft', Impact;
+}
