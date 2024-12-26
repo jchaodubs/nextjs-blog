@@ -1,3 +1,4 @@
+
 import Link from 'next/link'
 
 const navItems = {
@@ -20,7 +21,7 @@ export function Navbar() {
                 <h2 key="2"><Link
                   key={path}
                   href={path}
-                  className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+                  className="transition-all hover:text-neutral-800 text-rose-100 flex align-middle relative py-1 px-2 m-1"
                 >
                   {name}
                 </Link></h2>

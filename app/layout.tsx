@@ -1,38 +1,11 @@
+"use client"
 import './global.css'
-import type { Metadata } from 'next'
 import { Navbar } from './components/nav'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
-import { baseUrl } from './sitemap'
+import { OrbitSpace } from 'orbit-space'
 
-export const metadata: Metadata = {
-  metadataBase: new URL(baseUrl),
-  title: {
-    default: 'stuff',
-    template: '',
-  },
-  description: '',
-  openGraph: {
-    title: 'stuff',
-    description: '',
-    url: baseUrl,
-    siteName: 'stuff',
-    locale: 'en_US',
-    type: 'website',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-}
 
 const cx = (...classes) => classes.filter(Boolean).join(' ')
 
@@ -45,18 +18,20 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        'text-black bg-white dark:text-white dark:bg-black'
+        'text-rose-100 '
       )}
     >
-      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
+      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto"><OrbitSpace>
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+          
           <Navbar />
           {children}
           <Footer />
           <Analytics />
           <SpeedInsights />
-        </main>
+        </main></OrbitSpace>
       </body>
     </html>
   )
 }
+
