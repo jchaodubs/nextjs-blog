@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@devil7softwares/react-drifter-stars':
+        specifier: ^1.0.6
+        version: 1.0.6(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@tailwindcss/postcss':
         specifier: 4.0.0-alpha.13
         version: 4.0.0-alpha.13(postcss@8.4.35)
@@ -38,6 +41,9 @@ importers:
       next-mdx-remote:
         specifier: ^4.4.1
         version: 4.4.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      orbit-space:
+        specifier: ^1.1.0
+        version: 1.1.0
       postcss:
         specifier: ^8.4.35
         version: 8.4.35
@@ -47,6 +53,9 @@ importers:
       react-dom:
         specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
+      react-starfield:
+        specifier: ^1.0.3
+        version: 1.0.3(next@14.2.0-canary.62(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
       sugar-high:
         specifier: ^0.6.0
         version: 0.6.0
@@ -58,6 +67,12 @@ importers:
         version: 5.3.3
 
 packages:
+
+  '@devil7softwares/react-drifter-stars@1.0.6':
+    resolution: {integrity: sha512-mYed5Zh/GKOesoSTLEYKTn0y5DZbM6YM8qD3nI1XEX4EJJVQqrclMce19KUtRq4YtyIL2aBA447HZN9k96+Tgw==}
+    peerDependencies:
+      react: ^18.2.0
+      react-dom: ^18.2.0
 
   '@mdx-js/mdx@2.3.0':
     resolution: {integrity: sha512-jLuwRlz8DQfQNiUCJR50Y09CGPq3fLtmtUQfVrj79E0JWu3dvsVcxVIcfhR5h0iXu+/z++zDrYeiJqifRynJkA==}
@@ -379,6 +394,9 @@ packages:
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
+  gsap@3.12.5:
+    resolution: {integrity: sha512-srBfnk4n+Oe/ZnMIOXt3gT605BX9x5+rh/prT2F1SsNJsU1XuMiP0E2aptW481OnonOGACZWBqseH5Z7csHxhQ==}
+
   hasown@2.0.1:
     resolution: {integrity: sha512-1/th4MHjnwncwXsIW6QMzlvYL9kG5e/CpVvLRZe4XPa8TOUNbCELqmvhDmnkNsAjwaG4+I8gJJL0JBvTTLO9qA==}
     engines: {node: '>= 0.4'}
@@ -649,6 +667,9 @@ packages:
       sass:
         optional: true
 
+  orbit-space@1.1.0:
+    resolution: {integrity: sha512-AiONy32Y1twqYNRVsChO8daShZas8d79KSIzqXI8SQ4ejfx0R2UyOx9z+hr42gC5VFCvelqjTYCcIzTi9ueZxQ==}
+
   parse-entities@4.0.1:
     resolution: {integrity: sha512-SWzvYcSJh4d/SGLIOQfZ/CoNv6BTlI6YEQ7Nj82oDVnRpwe/Z/F1EMx42x3JAOwGBlCjeCH0BRJQbQ/opHL17w==}
 
@@ -689,6 +710,12 @@ packages:
     resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
     peerDependencies:
       react: ^18.2.0
+
+  react-starfield@1.0.3:
+    resolution: {integrity: sha512-JgNib2NPBvcCyvm0eLWnE1bjy5x3q/qywenjiIlrWScbz8tPAcRgmqsBfHe3mMkOs0bFm2kH6wjtc0HBRzFDqA==}
+    peerDependencies:
+      next: '>=13.4'
+      react: '>=17.0.0'
 
   react@18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
@@ -764,6 +791,9 @@ packages:
   tailwindcss@4.0.0-alpha.13:
     resolution: {integrity: sha512-YbLm8I10/bsGr7zrUNxn4Soj9Lc71anTWu/ulgry64rbBU4m0vov539+caeifAiKhsef2NUCW1twaqH3NfJd2Q==}
 
+  three@0.155.0:
+    resolution: {integrity: sha512-sNgCYmDijnIqkD/bMfk+1pHg3YzsxW7V2ChpuP6HCQ8NiZr3RufsXQr8M3SSUMjW4hG+sUk7YbyuY0DncaDTJQ==}
+
   trim-lines@3.0.1:
     resolution: {integrity: sha512-kRj8B+YHZCc9kQYdWfJB2/oUl9rA99qbowYYBtr4ui4mZyAQ2JpvVBd/6U2YloATfqBhBTSMhTpgBHtU0Mf3Rg==}
 
@@ -826,6 +856,11 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
 snapshots:
+
+  '@devil7softwares/react-drifter-stars@1.0.6(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
 
   '@mdx-js/mdx@2.3.0':
     dependencies:
@@ -1086,6 +1121,8 @@ snapshots:
       next: 14.2.0-canary.62(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
 
   graceful-fs@4.2.11: {}
+
+  gsap@3.12.5: {}
 
   hasown@2.0.1:
     dependencies:
@@ -1544,6 +1581,12 @@ snapshots:
       - '@babel/core'
       - babel-plugin-macros
 
+  orbit-space@1.1.0:
+    dependencies:
+      '@types/node': 20.11.17
+      gsap: 3.12.5
+      three: 0.155.0
+
   parse-entities@4.0.1:
     dependencies:
       '@types/unist': 2.0.10
@@ -1595,6 +1638,11 @@ snapshots:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+
+  react-starfield@1.0.3(next@14.2.0-canary.62(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0):
+    dependencies:
+      next: 14.2.0-canary.62(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react: 18.2.0
 
   react@18.2.0:
     dependencies:
@@ -1669,6 +1717,8 @@ snapshots:
   supports-preserve-symlinks-flag@1.0.0: {}
 
   tailwindcss@4.0.0-alpha.13: {}
+
+  three@0.155.0: {}
 
   trim-lines@3.0.1: {}
 
